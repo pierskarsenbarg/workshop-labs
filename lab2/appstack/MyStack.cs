@@ -10,7 +10,7 @@ class MyStack : Stack
 {
     public MyStack()
     {
-        var baseStack = new StackReference("pierskarsenbarg/lab1/dev");
+        var baseStack = new StackReference("pierskarsenbarg/workshop-lab1/dev");
 
         var resourceGroupName = baseStack.RequireOutput("ResourceGroupName").Apply(x => x.ToString());
         var containerRegistry = new Registry("registry", new RegistryArgs
