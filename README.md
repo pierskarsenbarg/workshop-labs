@@ -33,4 +33,4 @@ Starting in the `lab2/appstack` folder:
 
 ## Resource group name issue from the workshop earlier
 
-The issue I had was on this line of the code. I had `var baseStack = Pulumi.StackReference("pierskarsenbarg/lab1/dev");` and it should have been `var baseStack = new Pulumi.StackReference("pierskarsenbarg/lab1/dev");`.
+The issue I had was on [this line](https://github.com/pierskarsenbarg/workshop-labs/blob/cfc0368fc0142399c53eed15189d2f12115761a9/lab2/appstack/MyStack.cs#L13) of the code. I had `var baseStack = Pulumi.StackReference("pierskarsenbarg/lab1/dev");` and it should have been `var baseStack = new Pulumi.StackReference("pierskarsenbarg/lab1/dev");`.
